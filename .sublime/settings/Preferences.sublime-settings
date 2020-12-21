@@ -1,0 +1,6 @@
+//  Preferences/wkhtmltopdf/.sublime/settings/Preferences.sublime-settings
+
+{
+//  options to be used when running the wkhtmltopdf command
+    "wkhtmltopdf.cmd_options": "--javascript-delay 10000 --outline-depth 8 --encoding utf-8"
+}

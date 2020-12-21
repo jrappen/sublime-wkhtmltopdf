@@ -1,0 +1,18 @@
+# macOS
+
+.DS_Store
+Thumbs.db
+
+# Windows
+
+[Dd]esktop.ini
+
+# Python
+
+*.cache
+*.log
+*.py[co]
+
+# Sublime Text
+
+*.sublime-workspace
