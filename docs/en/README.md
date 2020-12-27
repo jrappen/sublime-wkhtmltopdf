@@ -28,10 +28,12 @@
 
 ## Requirements
 
-* This plug-in targets and is tested against the **latest Build** of [Sublime Text](https://www.sublimetext.com), currently requiring **`Build 4074`** or later.
-* [Install Package Control](https://packagecontrol.io/installation) via the menu: `Tools > Install Package Control`
-    * Close and reopen Sublime Text after having installed Package Control.
-* [`wkhtmltopdf`](http://wkhtmltopdf.org/downloads.html) must be in your `PATH`!
+!!! panel-warning "Requirements"
+
+    * This plug-in targets and is tested against the **latest Build** of [Sublime Text](https://www.sublimetext.com), currently requiring **`Build 4074`** or later.
+    * [Install Package Control](https://packagecontrol.io/installation) via the menu: `Tools > Install Package Control`
+        * Close and reopen Sublime Text after having installed Package Control.
+    * [`wkhtmltopdf`](http://wkhtmltopdf.org/downloads.html) must be in your `PATH`!
 
 ## Installation
 

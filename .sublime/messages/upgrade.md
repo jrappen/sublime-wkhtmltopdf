@@ -1,6 +1,6 @@
-# Thank you for updating `wkhtmltopdf` to `v2.7.0`
+# Thank you for updating `wkhtmltopdf` to `v2.8.0`
 
-> 2020-12-21
+> 2020-12-27
 
-* **Python:** Use mdpopups to show messages as html sheets (ST4074+)
-* **Package Control:** do not show install message when installing as missing package
+* **Python:** add frontmatter settings to mdpopups output
+* **Documentation:** enhance readability

@@ -28,10 +28,12 @@
 
 ## Voraussetzungen
 
-* `wkhtmltopdf` ist als Erweiterung für die **neuste Version** von [Sublime Text](https://www.sublimetext.com) gedacht und erfordert im Moment **`Build 4074`** oder neuer.
-* [Installiere Package Control](https://packagecontrol.io/installation) über den Menüeintrag: `Tools > Install Package Control`
-    * Schließe und öffne Sublime Text nach der Installation von Package Control.
-* [`wkhtmltopdf`](http://wkhtmltopdf.org/downloads.html) muss in deinem `PATH` sein!
+!!! panel-warning "Voraussetzungen"
+
+    * `wkhtmltopdf` ist als Erweiterung für die **neuste Version** von [Sublime Text](https://www.sublimetext.com) gedacht und erfordert im Moment **`Build 4074`** oder neuer.
+    * [Installiere Package Control](https://packagecontrol.io/installation) über den Menüeintrag: `Tools > Install Package Control`
+        * Schließe und öffne Sublime Text nach der Installation von Package Control.
+    * [`wkhtmltopdf`](http://wkhtmltopdf.org/downloads.html) muss in deinem `PATH` sein!
 
 ## Installation
 
