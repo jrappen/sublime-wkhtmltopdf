@@ -1,6 +1,5 @@
-# Thank you for updating `wkhtmltopdf` to `v2.8.0`
+# Thank you for updating `wkhtmltopdf` to `v2.8.1`
 
-> 2020-12-27
+> 2020-12-28
 
-* **Python:** add frontmatter settings to mdpopups output
-* **Documentation:** enhance readability
+* **Python:** fixed opening docs after PkgCtrl events

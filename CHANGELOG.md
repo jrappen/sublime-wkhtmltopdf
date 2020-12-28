@@ -1,5 +1,11 @@
 # Changelog `distractionless`
 
+## 2.8.1
+
+> 2020-12-28
+
+* **Python:** fixed opening docs after PkgCtrl events
+
 ## 2.8.0
 
 > 2020-12-27
