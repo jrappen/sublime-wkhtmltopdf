@@ -47,6 +47,13 @@ FRONTMATTER = {
         "markdown.extensions.admonition",
         "markdown.extensions.attr_list",
         "pymdownx.emoji",
+        {
+            "pymdownx.magiclink": {
+                "repo_url_shortener": True,
+                "repo": "sublime-wkhtmltopdf",
+                "user": "jrappen"
+            }
+        },
         "pymdownx.progressbar",
         "pymdownx.saneheaders",
         {"pymdownx.smartsymbols": {"ordinal_numbers": False}},
@@ -54,6 +61,31 @@ FRONTMATTER = {
     ]
 }
 PKG_NAME = __package__.split('.')[0]
+
+
+def is_installed():
+    try:
+        pkgctrl_settings = sublime.load_settings('Package Control.sublime-settings')
+        return PKG_NAME in set(pkgctrl_settings.get('installed_packages', []))
+    except Exception as e:
+        return False
+
+
+def plugin_loaded():
+    try:
+        from package_control import events
+        w = sublime.active_window()
+        if events.install(PKG_NAME) and not is_installed():
+            print('{}: Opening install message.'.format(PKG_NAME))
+            w.run_command('wkhtmltopdf_open_docs', {'resource_path': '.sublime/messages/install.md'})
+        elif events.post_upgrade(PKG_NAME):
+            print('{}: Opening upgrade message.'.format(PKG_NAME))
+            w.run_command('wkhtmltopdf_open_docs', {'resource_path': '.sublime/messages/upgrade.md'})
+    except Exception as e:
+        print('{}: Exception: {}'.format(PKG_NAME, e))
+
+
+# def plugin_unloaded():
 
 
 class WkhtmltopdfOpenDocs(sublime_plugin.WindowCommand):
