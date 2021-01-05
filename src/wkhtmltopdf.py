@@ -9,8 +9,6 @@ import os
 import subprocess
 from threading import Thread
 
-from .thread_progress import ThreadProgress
-
 
 PKG_NAME = __package__.split('.')[0]
 PKG_PREF = None
@@ -36,12 +34,7 @@ def load_settings(reload=False):
         status_msg('Reloaded settings on change.')
 
 
-def plugin_loaded():
-
-    load_settings()
-
-
-def plugin_unloaded():
+def unload_settings():
 
     global PKG_PREF
     PKG_PREF.clear_on_change('reload')
@@ -60,9 +53,6 @@ class Wkhtmltopdf(sublime_plugin.TextCommand):
         path_pdf = os.path.splitext(path_html)[0] + '.pdf'
         thread = Thread(target=self.html_to_pdf, args=(path_html, path_pdf))
         thread.start()
-        ThreadProgress(thread,
-                       '{}: Converting HTML to PDF ...'.format(PKG_NAME),
-                       '{}: Successfully created "{}".'.format(PKG_NAME, os.path.split(path_pdf)[1]))
 
     def html_to_pdf(self, path_html, path_pdf):
         cmd_options = PKG_PREF.get('wkhtmltopdf.cmd_options',

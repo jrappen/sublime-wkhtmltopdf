@@ -4,7 +4,7 @@
         "command": "wkhtmltopdf"
     },
     {
-        "caption": "wkhtmltopdf: Documentation (English)",
+        "caption": "wkhtmltopdf: Documentation: English",
         "command": "wkhtmltopdf_open_docs",
         "args":
         {
@@ -12,7 +12,7 @@
         }
     },
     {
-        "caption": "wkhtmltopdf: Documentation (German / Deutsch)",
+        "caption": "wkhtmltopdf: Documentation: German (Deutsch)",
         "command": "wkhtmltopdf_open_docs",
         "args":
         {
@@ -28,7 +28,7 @@
         }
     },
     {
-        "caption": "wkhtmltopdf: Issues",
+        "caption": "wkhtmltopdf: Report an issue",
         "command": "open_url",
         "args":
         {
@@ -36,7 +36,7 @@
         }
     },
     {
-        "caption": "wkhtmltopdf: Donations",
+        "caption": "wkhtmltopdf: Donate to support development",
         "command": "open_url",
         "args":
         {

@@ -1,60 +1,16 @@
 # Changelog `distractionless`
 
-## 2.8.2
+## 2.9.0
 
-> 2020-12-29
+> 2021-01-05
 
-* **Python:** move some code snippets
-* **mdpopups:** add `pymdownx.magiclink` extension
-
-## 2.8.1
-
-> 2020-12-28
-
-* **Python:** fixed opening docs after PkgCtrl events
-
-## 2.8.0
-
-> 2020-12-27
-
-* **Python:** add frontmatter settings to mdpopups output
-* **Documentation:** enhance readability
-
-## 2.7.0
-
-> 2020-12-21
-
-* **Package Control:** do not show install message when installing as missing package
-
-## 2.6.0
-
-> 2020-05-03
-
-* **GitHub:** Use default community health files
-
-## 2.5.0
-
-> 2020-04-27
-
-* **Python:** Use new mdpopups API
-
-# 2.4.0
-
-> 2020-03-09
-
+* **Commands & Menus:** Update captions
 * **Python:** Use Py3.3 until PkgCtrl handles 3.8
-
-## 2.2.0
-
-> 2020-02-06
-
-* **Documentation:** Switch to new html sheets (ST4065+)
-
-## 2.1.0
-
-> 2019-12-05
-
-* **Documentation:** Ship offline docs with crowbook
+* **Python:** Use new mdpopups API
+    * **Python:** add frontmatter settings to mdpopups output
+    * **Documentation:** Switch to new html sheets (ST4065+)
+* **GitHub:** Use default community health files
+* **chore:** remove redundant files
 
 ## 2.0.0
 
